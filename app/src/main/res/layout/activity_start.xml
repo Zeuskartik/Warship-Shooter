@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000"
+    tools:context=".Start">
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:textSize="28sp"
+        android:padding="5dp"
+        android:text="Shooter"
+        />
+    <TextView
+        android:id="@+id/intro_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/intro"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:text="Earth is under threat by evil an A.I.\nShoot the warships deployed by the A.I. to save the earth."
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/ai_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/intro_desc"
+        app:layout_constraintStart_toEndOf="@id/gun_image"
+        android:src="@drawable/robot"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toTopOf="@id/lowestTime"
+        />
+    <ImageView
+        android:id="@+id/gun_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/intro_desc"
+        android:src="@drawable/space_gun"
+        app:layout_constraintEnd_toStartOf="@id/ai_image"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toTopOf="@id/lowestTime"
+        />
+
+    <TextView
+        android:id="@+id/lowestTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gun_image"
+        app:layout_constraintBottom_toTopOf="@id/start_game"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Lowest Time : "
+        android:textColor="#fff"
+        android:layout_margin="20dp"
+        android:textSize="24sp"
+        />
+    <TextView
+        android:id="@+id/start_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lowestTime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="START"
+        android:textColor="#fff"
+        android:layout_margin="20dp"
+        android:textSize="24sp"
+        android:background="#33FFFFFF"
+        android:padding="10dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
