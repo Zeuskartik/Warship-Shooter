@@ -30,7 +30,7 @@
         android:textColor="#fff"
         android:textSize="18sp"
         android:padding="5dp"
-        android:text="Earth is under threat by evil an A.I.\nShoot the warships deployed by the A.I. to save the earth."
+        android:text="Earth is under threat by an evil A.I. Robot\nShoot the warships deployed by the A.I. Robot to save the earth."
         android:gravity="center"
         />
 
