@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Score: 20"
+        android:text="Score: 0"
         android:textSize="16sp"
         android:textColor="#fff"
         />
