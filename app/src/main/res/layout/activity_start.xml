@@ -65,7 +65,7 @@
         app:layout_constraintBottom_toTopOf="@id/start_game"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Lowest Time : "
+        android:text="Last Recorded Time : "
         android:textColor="#fff"
         android:layout_margin="20dp"
         android:textSize="24sp"
